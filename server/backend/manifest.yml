@@ -1,8 +1,16 @@
 ---
-applications:
-- path: .
-  name: capstone-2 #change to be unique in IBM Cloud
-  buildpack: nodejs_buildpack
-  memory: 256M
-  instances: 1
-  random-route: true
+
+  applications:
+  - name: reactchatbox
+    routes:
+      - route: sbwmsgchatbox.eu-gb.cf.appdomain.cloud
+    memory: 128M
+    buildpack: nodejs_buildpack
+  - name: reactchatbox-nginx
+    routes:
+      - route: sbwmsgchatbox.eu-gb.cf.appdomain.cloud/static
+    memory: 128M
+    buildpack: staticfile_buildpack
+    instances: 1
+    random-route: true
+
