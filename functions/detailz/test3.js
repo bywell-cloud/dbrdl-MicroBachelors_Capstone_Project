@@ -40,8 +40,8 @@ return new Promise(function (resolve, reject) {
 
 
 
-    const dealershipDb = cloudant.use('dealerships');  
-if (params.state) {
+    const rdb = cloudant.use('reviews');  
+if (params.dealership) {
 
         // return dealership with this state  
 
@@ -50,9 +50,9 @@ if (params.state) {
         dealershipDb.find({ 
 "selector": {
 
-"state": {
+"dealership": {
 
- "$eq": params.state   
+ "$eq": params.dealership   
 }
 
 }
@@ -131,7 +131,7 @@ if (params.state) {
 
 
 
-        dealershipDb.find({selector: {id:parseInt(params.id)}}, function (err, result) {  
+        rdb.find({selector: {id:parseInt(params.id)}}, function (err, result) {  
 
 
 
