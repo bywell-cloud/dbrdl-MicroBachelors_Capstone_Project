@@ -11,7 +11,7 @@ packages:
         type: string
         value: $CLOUDANT_APIKEY
     actions:
-      apidealership:
+      apidealershipa:
         # source for the action; in this case it is a folder
         function: detailz/test3.js
         runtime: nodejs:12
