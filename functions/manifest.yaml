@@ -1,6 +1,6 @@
 packages:
   # this is the package name
-  dealership2-package:
+  dealership2a-package:
     version: 1.0
     license: Apache-2.0
     inputs:
@@ -18,10 +18,10 @@ packages:
         # publish the action as a web action
         web: yes
     apis:
-      dealership2-api:
+      dealership2a-api:
         api:
-          apidealership:
-            apidealership:
+          apidealershipa:
+            apidealershipa:
               method: GET
 
 
