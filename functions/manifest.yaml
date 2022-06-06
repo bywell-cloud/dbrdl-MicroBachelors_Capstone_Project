@@ -13,7 +13,7 @@ packages:
     actions:
       apidealership:
         # source for the action; in this case it is a folder
-        function: detailz/test2.js
+        function: detailz/test3.js
         runtime: nodejs:12
         # publish the action as a web action
         web: yes
